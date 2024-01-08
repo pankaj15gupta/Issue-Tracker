@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb+srv://pankaj:allow1234@cluster0.xnvpsfz.mongodb.net/');
-// mongoose.connect('mongodb://127.0.0.1:27017/Issue-Tracker');
+// mongoose.connect('mongodb+srv://pankaj:allow1234@cluster0.xnvpsfz.mongodb.net/');
+mongoose.connect('mongodb://127.0.0.1:27017/Issue-Tracker');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
